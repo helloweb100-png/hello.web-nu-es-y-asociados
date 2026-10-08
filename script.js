@@ -10,7 +10,7 @@
      Un solo lugar para el número de WhatsApp. Formato: código de país + lada + número,
      sin "+" ni espacios. Ejemplo México: 5215512345678                                  */
   var CONFIG = {
-    whatsapp: '520000000000',            // TODO: reemplazar por el número real del despacho
+    whatsapp: '5215533821966',
     business: 'Núñez y Asociados'
   };
 
