@@ -22,11 +22,15 @@
   <meta property="og:title" content="Núñez y Asociados | Contabilidad clara. Impuestos bajo control.">
   <meta property="og:description" content="Facturación, contabilidad y nómina electrónica con soporte incluido. Cumplimos con el SAT para que te dediques a crecer.">
   <meta property="og:url" content="https://www.nunezyasociados.com.mx/">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1664575602276-acd073f104c1?auto=format&fit=crop&w=1200&h=630&q=80">
+  <meta property="og:image" content="https://www.nunezyasociados.com.mx/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logotipo de Núñez &amp; Asociados, facturación electrónica">
   <meta name="twitter:card" content="summary_large_image">
 
-  <!-- Favicon: monograma N -->
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Crect width='48' height='48' fill='%230A4DD8'/%3E%3Cpath fill='%23fff' d='M11 11h6v26h-6zM31 11h6v26h-6zM11 11h6l20 26h-6z'/%3E%3C/svg%3E">
+  <!-- Favicon: escudo del logotipo -->
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/favicon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
 
   <!-- Fuentes e iconos -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,10 +40,11 @@
   <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
   <link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/fill/style.css">
   <link rel="preload" as="image" href="https://images.unsplash.com/photo-1664575602276-acd073f104c1?auto=format&fit=crop&w=1000&h=1200&q=80" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/logo.png">
   <link rel="stylesheet" href="styles.css">
 
   <!-- Datos estructurados: negocio -->
-  <!-- TODO: agregar telephone, address y sameAs (redes) cuando el cliente los confirme -->
+  <!-- TODO: agregar sameAs (redes) cuando el cliente las confirme -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -47,6 +52,17 @@
     "name": "Núñez y Asociados",
     "description": "Despacho contable: facturación electrónica CFDI 4.0, contabilidad electrónica, timbrado de nómina y asesoría fiscal.",
     "url": "https://www.nunezyasociados.com.mx/",
+    "logo": "https://www.nunezyasociados.com.mx/assets/logo.png",
+    "image": "https://www.nunezyasociados.com.mx/assets/og-image.jpg",
+    "telephone": ["+525533821966", "+525544840743", "+525594366656"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "C. Progreso 45, Col. Revolución",
+      "addressLocality": "Venustiano Carranza",
+      "addressRegion": "Ciudad de México",
+      "postalCode": "15460",
+      "addressCountry": "MX"
+    },
     "areaServed": { "@type": "Country", "name": "México" },
     "priceRange": "$$",
     "knowsAbout": ["Facturación electrónica CFDI 4.0", "Contabilidad electrónica", "Timbrado de nómina", "Asesoría fiscal", "Regularización fiscal"]
@@ -117,16 +133,6 @@
 <body>
 <a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-<!-- ═════════ SPRITE: LOGOTIPO (monograma N) ═════════ -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
-  <symbol id="lg-mark" viewBox="0 0 48 48">
-    <rect width="48" height="48" fill="#0A4DD8"/>
-    <rect x="3" y="3" width="42" height="42" fill="none" stroke="#fff" stroke-opacity=".28" stroke-width="1"/>
-    <path fill="#fff" d="M11 11h6v26h-6zM31 11h6v26h-6zM11 11h6l20 26h-6z"/>
-    <rect x="37" y="5" width="6" height="6" fill="#7FA8FF"/>
-  </symbol>
-</svg>
-
 <!-- ═════════ LOADER ═════════ -->
 <div id="loader" role="status" aria-live="polite" aria-label="Cargando sitio">
   <div class="ld-panel ld-panel--top"></div>
@@ -136,7 +142,7 @@
       <span class="ld-sq ld-sq--1"></span>
       <span class="ld-sq ld-sq--2"></span>
       <span class="ld-sq ld-sq--3"></span>
-      <svg class="ld-mark" width="56" height="56"><use href="#lg-mark"/></svg>
+      <img class="ld-mark" src="assets/logo.png" alt="" width="96" height="96">
     </div>
     <p class="ld-name"><b>Núñez</b> <span>y Asociados</span></p>
     <div class="ld-meter" aria-hidden="true">
@@ -151,7 +157,7 @@
 <header class="site-header" id="header">
   <div class="wrap header-in">
     <a class="brand" href="#inicio" aria-label="Núñez y Asociados, ir al inicio">
-      <svg class="brand-mark" width="40" height="40" aria-hidden="true"><use href="#lg-mark"/></svg>
+      <img class="brand-mark" src="assets/logo.png" alt="" width="52" height="52">
       <span class="brand-text"><b>Núñez</b><i>y Asociados</i></span>
     </a>
 
@@ -598,11 +604,10 @@
         <h2 id="ct-title" class="sec-title" data-split>Platiquemos de tu caso</h2>
         <p class="sec-lead" data-reveal>Déjanos tus datos y un asesor te contacta por WhatsApp con una propuesta clara.</p>
 
-        <!-- TODO: reemplazar con los datos reales del despacho -->
         <address class="c-list">
           <div class="c-item" data-reveal style="--i:0">
             <span class="c-ico" aria-hidden="true"><i class="ph ph-phone"></i></span>
-            <div><p class="c-label">Teléfono</p><p class="c-val"><a href="tel:+5215533821966">+52 1 55 3382 1966</a></p></div>
+            <div><p class="c-label">Teléfonos</p><p class="c-val"><a href="tel:+525533821966">+52 55 3382 1966</a> <span class="c-note">Principal</span><br><a href="tel:+525544840743">+52 55 4484 0743</a><br><a href="tel:+525594366656">+52 55 9436 6656</a></p></div>
           </div>
           <div class="c-item" data-reveal style="--i:1">
             <span class="c-ico" aria-hidden="true"><i class="ph ph-envelope-simple"></i></span>
@@ -610,11 +615,11 @@
           </div>
           <div class="c-item" data-reveal style="--i:2">
             <span class="c-ico" aria-hidden="true"><i class="ph ph-map-pin"></i></span>
-            <div><p class="c-label">Oficina</p><p class="c-val">Calle y número, Colonia, Ciudad, Estado<br>Visítanos previa cita</p></div>
+            <div><p class="c-label">Oficina</p><p class="c-val">C. Progreso 45, Col. Revolución<br>Alcaldía Venustiano Carranza, CP 15460<br>Ciudad de México</p></div>
           </div>
           <div class="c-item" data-reveal style="--i:3">
             <span class="c-ico" aria-hidden="true"><i class="ph ph-clock"></i></span>
-            <div><p class="c-label">Horario</p><p class="c-val">Atención a clientes: lunes a viernes de 9:00 a 18:00<br>Soporte técnico: lunes a viernes de 9:00 a 19:00<br>Sábados de 9:00 a 13:00</p></div>
+            <div><p class="c-label">Horario</p><p class="c-val">Llamadas y mensajes<br>de 8:00 a 21:00 h</p></div>
           </div>
         </address>
       </div>
@@ -689,7 +694,7 @@
     <div class="foot-grid">
       <div class="foot-brand">
         <a class="brand" href="#inicio" aria-label="Núñez y Asociados, ir al inicio">
-          <svg class="brand-mark" width="40" height="40" aria-hidden="true"><use href="#lg-mark"/></svg>
+          <img class="brand-mark" src="assets/logo.png" alt="" width="52" height="52">
           <span class="brand-text"><b>Núñez</b><i>y Asociados</i></span>
         </a>
         <p>Despacho contable y administrativo electrónico. Facturación, contabilidad y nómina con soporte que sí contesta.</p>
@@ -718,7 +723,9 @@
       <div class="foot-col">
         <h2 class="foot-title">Contacto</h2>
         <ul>
-          <li><a href="tel:+5215533821966">+52 1 55 3382 1966</a></li>
+          <li><a href="tel:+525533821966">+52 55 3382 1966</a></li>
+          <li><a href="tel:+525544840743">+52 55 4484 0743</a></li>
+          <li><a href="tel:+525594366656">+52 55 9436 6656</a></li>
           <li><a href="mailto:contacto@nunezyasociados.com.mx">contacto@nunezyasociados.com.mx</a></li>
           <li><a href="#contacto">Solicitar cotización</a></li>
         </ul>
